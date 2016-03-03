@@ -1,0 +1,190 @@
+@import 'sass/_normalize.scss';
+@import 'sass/_base.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: $text;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 3.998em;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 3.157em;
+}
+
+h3 {
+    font-size: 1.777em;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    color: $accent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px 10px 7px;
+}
+
+.btn, button {
+    background: $action;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 800;
+    padding: 10px 51px 7px;
+    color: #FFF;
+    letter-spacing: 1px;
+    border: solid 2px $action;
+    @include trans();
+    &:hover {
+        background: $action - 30;
+        border-color: $action - 30;
+    }
+}
+
+.btn-text {
+    @extend .btn;
+    background: transparent;
+}
+
+.btn-primary {
+    @extend .btn;
+    background: $accent;
+    border: solid 2px $accent;
+    &:hover {
+        background: $accent - 30;
+        border-color: $accent - 30;
+    }
+}
+
+
+.header {
+    background: white;
+    border-bottom: 1px solid $dgrey;
+    color: $text;
+    position: relative;
+    z-index: 10;
+    height: 60px;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    @include card(1);
+    a {
+        color: $text;
+    }
+    .site-title {
+        line-height: 0;
+        margin: 0;
+    }
+}
+
+.main-nav {
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+    li + li {
+        margin-left: 20px;
+    }
+    a {
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+    }
+}
+
+.login-toggle {
+    cursor: pointer;
+}
+
+
+// Homepage
+.billboard {
+    background-image: url('/met-stars.png'), linear-gradient(#202023, #19283f);
+    color: #FFF;
+    text-align: center;
+    border-bottom: 1px solid $dgrey;
+    padding: 40px 5%;
+}
+
+
+.app-layout {
+    margin-left: 80px;
+    min-height: 100vh;
+    padding: 40px 60px;
+}
+
+.app-nav {
+    z-index: 9;
+    position: fixed;
+    width: 80px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    color: $text;
+    padding-top: 100px;
+    transition: all 0.3s ease;
+    border-right: solid 1px $dgrey;
+    &:hover {
+        width: 300px;
+        a > span {
+            opacity: 1;
+            transform: translate3d(0, 0,0);
+        }
+    }
+    a {
+        width: 100%;
+        padding: 10px 25px;
+        color: $text;
+        display: block;
+        white-space: nowrap;
+        font-size: 1em;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+        i {
+            font-size: 2em;
+            margin-right: 20px;
+        }
+        > span {
+            transform: translate3d(20px, 0,0);
+            opacity: 0;
+            transition: background 0.3s ease;
+        }
+        &:hover {
+            color: #FFF;
+            border-color: $action;
+            background: $nav - 20;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.page-title {
+    margin-top: 0;
+}
+
