@@ -1,6 +1,6 @@
 import React, {component} from 'react';
 
-class AppNav extends React.Component {
+export default class AppNav extends React.Component {
     render() {
         return (
             <div className="app-nav">
@@ -12,5 +12,3 @@ class AppNav extends React.Component {
         )
     }
 }
-
-export default AppNav;

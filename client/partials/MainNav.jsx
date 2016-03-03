@@ -1,6 +1,6 @@
-import React, {component} from 'react';
+import React, {Component} from 'react';
 
-class MainNav extends React.Component {
+export default class MainNav extends Component {
     render() {
         return (
             <nav className="main-nav">
@@ -13,4 +13,3 @@ class MainNav extends React.Component {
     }
 }
 
-export default MainNav;

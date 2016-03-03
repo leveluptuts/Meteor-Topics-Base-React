@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MainNav from './MainNav.jsx';
 
-class Header extends Component {
+export default class Header extends Component {
     render() {
         return (
             <header className="header">
@@ -13,4 +13,3 @@ class Header extends Component {
         )
     }
 }
-export default Header
