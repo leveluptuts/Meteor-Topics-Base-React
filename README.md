@@ -1,4 +1,4 @@
-# Level Up Tutorials Meteor Blaze Base
+# Level Up Tutorials Meteor React Base
 
 
 ## How To Use
@@ -6,7 +6,7 @@
 Clone or download this repo. Browse to wherever downloaded in your terminal.
 
 ```
-cd base-blaze
+cd React-Base
 meteor
 ```
 
@@ -16,7 +16,7 @@ Open up http://localhost:3000 and see this.
 
 ## What is this?
 
-This is the base repo for starting any of the Meteor Blaze Topics Tutorials 
+This is the base repo for starting any of the Meteor React Topics Tutorials 
 
 ## What this is not
 
