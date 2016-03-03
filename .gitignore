@@ -5,3 +5,6 @@ client/accounts/*
 accounts.scss
 settings.json
 mup.json
+
+node_modules
+node_modules/*
